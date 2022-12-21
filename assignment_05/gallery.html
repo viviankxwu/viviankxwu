@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cafe Hopping Adventures</title>
+    <link rel="stylesheet" href="main.css">
+
+	<style>
+		#header {
+			background-image: url("img/gallerycoffeepic.JPG");
+			height: 350px;
+			background-size: cover;
+			background-position: center;
+			color: #fff;
+			font-size: 1.2em;
+			font-family: Arial, Helvetica, sans-serif;
+			text-align: center;
+			line-height: 350px;
+			text-shadow: 0px 0px 10px #000;
+	}
+    .box-square {
+        width: 240.25px;
+        /* 1025px total and 4 images total
+        margin 5px * 8 = 40px;
+        border 3px * 8 = 24px;
+        1025 - 40 - 24 = 961px / 4 pictures = 240.25px each */
+		height: 200px;
+		margin: 5px;
+		opacity: 0.5;
+        border: 3px solid white;      
+    }
+    .box-rectangle {
+        width: 496.5px;
+        /* 1025px total and 4 images total
+        margin 5px * 8 = 40px;
+        border 3px * 8 = 24px;
+        1025 - 40 - 24 = 961px / 4 pictures = 240.25px each 
+        240.25 * 2 =480.5 + 10px margin + 6px border = 496.5px*/
+		height: 200px;
+		margin: 5px;
+		opacity: 0.5;
+        border: 3px solid white;      
+    }
+    .box-big {
+        width: 496.5px;
+        /* 1025px total and 4 images total
+        margin 5px * 8 = 40px;
+        border 3px * 8 = 24px;
+        1025 - 40 - 24 = 961px / 4 pictures = 240.25px each 
+        240.25 + 10px margin + 6px border = 256.25px*/
+		height: 436px;
+        /* 200px * 2 = 400 + 30 padding + 6 border = 436px */
+		margin: 5px;
+		opacity: 0.5;
+        border: 3px solid white;     
+    }
+    .box-vertical {
+        width: 240.25px;
+		height: 436px;
+		margin: 5px;
+		opacity: 0.5;
+        border: 3px solid white;     
+    }
+    #main {
+        display: flex;
+        background-color: burlywood;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 1025px;
+        margin-left: auto;
+		margin-right: auto;
+    }
+	</style>
+</head>
+<body>
+	<div id="header">
+	<h1>Photo Album — Cafe</h1>
+	</div> <!--#header-->
+	
+
+	<div id="navbar">
+		<a href="assignment_05.html#starbucksreserve">Home</a>
+		<a id="active-nav" href="gallery.html">Gallery</a>
+	</div> <!--#navbar-->
+
+    <div id="main">
+        
+        <div class="img-container">
+            <img class="box-rectangle" src="img/grayplaceholder.png"Link">        
+        </div><!--.img-container-->
+
+        <div class="img-container">
+            <img class="box-square" src="img/grayplaceholder.png"Link">
+        </div><!--.img-container-->
+
+        <div class="img-container">
+            <img class="box-square" src="img/grayplaceholder.png"Link">
+        </div><!--.img-container-->
+
+        <div class="img-container">
+            <img class="box-big" src="img/grayplaceholder.png"Link">
+        </div><!--.img-container-->
+
+        <div class="img-container">
+            <img class="box-vertical" src="img/grayplaceholder.png"Link">
+        </div><!--.img-container-->
+
+        <div class="img-container">
+            <img class="box-vertical" src="img/grayplaceholder.png"Link">
+        </div><!--.img-container-->
+
+        <div class="img-container">
+            <img class="box-square" src="img/grayplaceholder.png"Link">
+        </div><!--.img-container-->
+
+        <div class="img-container">
+            <img class="box-square" src="img/grayplaceholder.png"Link">
+        </div><!--.img-container-->
+
+        <div class="img-container">
+            <img class="box-rectangle" src="img/grayplaceholder.png"Link">
+        </div><!--.img-container-->    
+    
+    </div><!--#main-->
+	<div id="footer">
+	<p>Vivian Wu &copy; 2022</p>
+	</div> <!--#footer-->
+
+</body>
+</html>

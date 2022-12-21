@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cafe Hopping Adventures</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter+Tight&display=swap" rel="stylesheet">
+
+	<style>
+	#header {
+		background-image: url("img/gallerycoffeepic.JPG");
+		height: 350px;
+		background-size: cover;
+		background-position: center;
+		color: #fff;
+		font-size: 1.5em;
+		text-align: center;
+		line-height: 350px;
+		text-shadow: 0px 0px 10px #000;
+        font-family: "Cafe Font", cursive;
+	}
+    .box-square {
+        width: 240.25px;
+        /* 1025px total and 4 images total
+        margin 5px * 8 = 40px;
+        border 3px * 8 = 24px;
+        1025 - 40 - 24 = 961px / 4 pictures = 240.25px each */
+		height: 200px;
+		margin: 5px;
+        border: 3px solid white;      
+    }
+    .box-rectangle {
+        width: 496.5px;
+        /* 1025px total and 4 images total
+        margin 5px * 8 = 40px;
+        border 3px * 8 = 24px;
+        1025 - 40 - 24 = 961px / 4 pictures = 240.25px each 
+        240.25 * 2 =480.5 + 10px margin + 6px border = 496.5px*/
+		height: 200px;
+		margin: 5px;
+        border: 3px solid white;      
+    }
+    .box-big {
+        width: 496.5px;
+        /* 1025px total and 4 images total
+        margin 5px * 8 = 40px;
+        border 3px * 8 = 24px;
+        1025 - 40 - 24 = 961px / 4 pictures = 240.25px each 
+        240.25 + 10px margin + 6px border = 256.25px*/
+		height: 436px;
+        /* 200px * 2 = 400 + 30 padding + 6 border = 436px */
+		margin: 5px;
+        border: 3px solid white;     
+    }
+    .box-vertical {
+        width: 240.25px;
+		height: 436px;
+		margin: 5px;
+        border: 3px solid white;     
+    }
+    #main {
+        display: flex;
+        background-color: burlywood;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 1025px;
+        margin-left: auto;
+		margin-right: auto;
+    }
+    .img-container {
+		overflow: hidden;
+		position: relative;
+    }
+    .img-container > img {
+		height: auto;
+		width: 100%;
+	}
+        
+    .img-container .fit {
+		height: 100%;
+		width: auto;
+	}
+    
+    .img-container > .caption {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		color: #FFF;
+		text-align: center;
+		padding-top: 80px;
+		background-color: rgba(0, 0, 0, 0.5);
+		visibility: hidden;
+    }
+
+    .box-big > .caption {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		color: #FFF;
+		text-align: center;
+		padding-top: 210px;
+		background-color: rgba(0, 0, 0, 0.5);
+		visibility: hidden;
+    }
+
+    .box-vertical > .caption {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		color: #FFF;
+		text-align: center;
+		padding-top: 210px;
+		background-color: rgba(0, 0, 0, 0.5);
+		visibility: hidden;
+    }
+
+    .box-rectangle > .caption {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		color: #FFF;
+		text-align: center;
+		padding-top: 90px;
+		background-color: rgba(0, 0, 0, 0.5);
+		visibility: hidden;
+    }
+
+    .box-square > .caption {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		color: #FFF;
+		text-align: center;
+		padding-top: 90px;
+		background-color: rgba(0, 0, 0, 0.5);
+		visibility: hidden;
+    }
+
+    .img-container:hover > .caption {
+		visibility: visible;
+	}
+    #navbar a:hover, #navbar #active-gallery{
+    /* This CSS only applies to <a> tags that are being hovered 	over. */
+    color: saddlebrown;
+    border-bottom: 2px solid saddlebrown;	
+    }
+
+	</style>
+</head>
+<body>
+	<div id="header">
+	<h1>Photo Album — Cafe</h1>
+	</div> <!--#header-->
+	
+
+    <div id="navbar">
+		<ul>
+			<li><a id="active-nav" href="assignment_06.html">Home</a>
+				<ul>
+					<li><a href="assignment_06.html#starbucksreserve">Starbucks Reserve</a></li>
+					<li><a href="assignment_06.html#stereocoffee">Stereoscope Coffee</a></li>
+					<li><a href="assignment_06.html#mrwestcoffee">Mr. West Cafe</a></li>
+				</ul>
+			</li>
+			<li><a id="active-gallery" href="gallery.html">Gallery</a></li>
+		</ul>
+	</div> <!--#navbar-->
+
+    <div id="main">
+        <div class="img-container box-rectangle">
+            <img src="img/starbuckspic2.png" alt="Starbucks Making"> 
+            <div class="caption"> 
+                Baristas work diligently to perfect your Starbucks Reserve drink. 
+            </div>       
+        </div><!--.img-container-->
+
+        <div class="img-container box-square">
+            <img src="img/starbuckspic1.png" alt="Starbucks Goodies">
+            <div class="caption"> 
+                Starbucks Reserve offers a variety of delicious pastries.  
+            </div>
+        </div><!--.img-container-->
+
+        <div class="img-container box-square">
+            <img class="fit" src="img/starbuckspic3.jpeg" alt="Starbucks Specialty Drinks">
+            <div class="caption"> 
+                Specialty drinks, even alcoholic beverages, are available at the Starbucks Reserve. 
+            </div>
+        </div><!--.img-container-->
+
+        <div class="img-container box-big">
+            <img src="img/stereopic1.jpeg" alt="Stereoscope Counter">
+            <div class="caption"> 
+                Stereoscope Coffee features a clean, minimalistic vibe.
+            </div>
+        </div><!--.img-container-->
+
+        <div class="img-container box-vertical">
+            <img class="fit" src="img/stereopic2.jpeg" alt="Stereoscope Drink">
+            <div class="caption"> 
+                There's the option of buying Stereoscope Coffee to bring home.   
+            </div>
+        </div><!--.img-container-->
+
+        <div class="img-container box-vertical">
+            <img class="fit" src="img/stereopic3.jpeg" alt="Stereoscope Community">
+            <div class="caption"> 
+                Stereoscope Coffee is a welcoming cafe perfect for building community and connecting with others.   
+            </div>
+        </div><!--.img-container-->
+
+        <div class="img-container box-square">
+            <img src="img/mrwestpic1.jpeg" alt="Mr. West Meal">
+            <div class="caption"> 
+                Enjoy the wonderful atmosphere at Mr. West Cafe with your loved ones.   
+            </div>
+        </div><!--.img-container-->
+
+        <div class="img-container box-square">
+            <img class="fit" src="img/mrwestpic2.jpeg" alt="Mr. West Plants">
+            <div class="caption"> 
+                Mr. West Cafe has a little plants and souvenirs shop in the corner to support local businesses.  
+            </div>
+        </div><!--.img-container-->
+
+        <div class="img-container box-rectangle">
+            <img src="img/mrwestpic3.jpeg" alt="Mr. West Outside">
+            <div class="caption"> 
+                You can't miss the aesthetic cafe—stop by whenever you can!   
+            </div>
+        </div><!--.img-container-->
+    
+    </div><!--#main-->
+	<div id="footer">
+	<p>Vivian Wu &copy; 2022</p>
+	</div> <!--#footer-->
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vivian Wu | Student Page</title>
+    <style>
+       #first-div {
+			background-image: url("image.jpg");
+       }
+       #second-div { 
+        background-color: #FF0;
+       }
+       .selected {
+        background-color: #FF9;
+       }
+        #small {
+        visibility: hidden;
+    }
+        #big:hover > #small{
+        visibility: visible;
+    }
+    #small {
+        position:absolute;
+        right: 100px;
+    }
+    #big-div > div {
+  background-color: yellow;
+}
+
+#small-div {
+  background-color: blue;
+}
+
+    @media (max-width: 500px) {
+			.large-font {
+                font-size: 2em;
+            		    }
+        }
+
+    #wrapper {
+        width: 600px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    #left {
+        width: 200px;
+        background-color: lightblue;
+    }
+
+    #wrap2 {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    #middle-top {
+        width: 200px;
+        background-color: yellow;
+    }
+
+    #middle-bottom {
+        width: 200px;
+        background-color: lightgreen;
+    }
+
+    #right {
+        width: 200px;
+        background-color: pink
+    }
+    
+    </style>
+    </head>
+   
+
+
+    <body>
+        <h1>Vivian Wu</h1>
+        <img src="img1/anotherimg/download.png" alt="practice">
+
+        <label>
+            <input type="radio" name="contact">
+            Email
+            </label>
+        
+        <label>
+            <input type="radio" name="contact">
+            Text
+            </label>
+            
+        <div id="big">
+            Big Box
+            <div id="small">Small Box</div>
+        </div>
+            
+        <table>
+            <tr>
+                <th></th>
+                <th>HTML</th>
+                <th>CSS</th>
+                <th>JS</th>
+            </tr>
+
+            <tr>
+                <td><strong>Covered in ITP 104</strong></td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>No</td>
+            </tr>
+        </table>
+
+        <div id="big-div">
+            <div id="small-div">Small Div</div>
+          </div>
+
+          <form action="submit.html">
+          <div class="form-row">
+            <div class="form-col">
+            <label for="exam">State:</label>
+            </div> <!--.form-col-->
+            <select id="exam">
+                <option>California</option>
+            </select>
+        </div> <!--.form-row-->
+
+        <button type="submit">Send</button>
+        </form>
+
+        <form action="submit.html">
+            <div>
+              <div>
+              <label for="exam">State:</label>
+              </div> <!--.form-col-->
+              <select id="exam">
+                  <option>California</option>
+              </select>
+          </div> <!--.form-row-->
+  
+          <button type="submit">Send</button>
+          </form>
+
+          <h1>To do list:</h1>
+          <ol>
+            <li>Homework.</li>
+            <li>Study for ITP 104:
+                <ol>
+                    <li>Review lecture notes,</li>
+                    <li>Review assignments & labs.</li>
+                </ol>
+            </li>
+            <li>Exercise.</li>
+          </ol>
+          
+          <div id="wrapper">
+            <div id="left">
+                <p>Left</p>
+            </div>
+            <div id="wrap2">
+            <div id="middle-top">
+                <p>Middle-Top</p>
+            </div>
+
+            <div id="middle-bottom">
+                <p>Middle-Bottom</p>
+            </div>
+            </div> <!--#wrap2-->
+
+            <div id="right">
+                <p>Right</p>
+            </div>
+          </div><!--#wrapper-->
+
+
+
+
+    </body>
+    
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A Golden Gardens Sunset</title>
+
+	<style>
+		h1 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: lightskyblue;
+        }
+
+        #main {
+            width: 900px;
+            margin: auto;
+        }
+
+        #photos {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .img-container {
+			background-color: lightskyblue;
+			width: 300px;
+			height: 400px;
+			position: relative;
+        }
+
+        .img-container > img {
+			/* width: 100%;
+			height: auto; */
+			height: auto;
+			width: 100%;
+		}
+
+        .first {
+            position: absolute;
+            top: 0px;
+            right: 30px;
+            box-shadow: 5px 5px 10px #000;
+        }
+
+        .second {
+            position: absolute;
+            top: 0px;
+            left: 30px;
+            box-shadow: 5px 5px 10px #000;
+        }
+
+        .third {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            box-shadow: 5px 5px 10px #000;
+        }
+
+        .center {
+            position: relative;
+        }
+	</style>
+
+</head>
+
+<body>
+    <h1>A Golden Gardens Sunset</h1>
+
+    <div id="main">
+        <div id="photos">
+            <div class="img-container">
+                <img class="first" src="sunset_clipped/row-1-column-1.jpg" alt="1">
+            </div> <!-- .img-container -->
+    
+            <div class="img-container">
+                <img src="sunset_clipped/row-1-column-2.jpg" alt="2">
+            </div> <!-- .img-container -->
+    
+            <div class="img-container">
+                <img src="sunset_clipped/row-1-column-3.jpg" alt="3">
+            </div> <!-- .img-container -->	
+        
+            <div class="img-container">
+                <img src="sunset_clipped/row-2-column-1.jpg" alt="4">
+            </div> <!-- .img-container -->	
+    
+            <div class="img-container">
+                <img class="center" src="sunset_clipped/row-2-column-2.jpg" alt="5">
+            </div> <!-- .img-container -->	
+    
+            <div class="img-container">
+                <img class="second" src="sunset_clipped/row-2-column-3.jpg" alt="6">
+            </div> <!-- .img-container -->	
+    
+            <div class="img-container">
+                <img class="third" src="sunset_clipped/row-3-column-1.jpg" alt="7">
+            </div> <!-- .img-container -->	
+            
+            <div class="img-container">
+                <img src="sunset_clipped/row-3-column-2.jpg" alt="8">
+            </div> <!-- .img-container -->	
+    
+            <div class="img-container">
+                <img src="sunset_clipped/row-3-column-3.jpg" alt="9">
+            </div> <!-- .img-container -->
+			
+        </div> <!--#photos-->
+    </div> <!--#main-->
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+    <script src="draggability/draggabilly.pkgd.min.js"></script>
+
+    <script>        
+        var $draggable = $('.img-container').draggabilly();
+	</script>
+</body>
+</html>

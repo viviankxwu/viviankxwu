@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Effects: Photos</title>
+	<style>
+		h1, h3 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: orangered;
+            }
+        img {
+            width: 300px;
+            height: auto;
+        }
+        #whole {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 600px;
+            margin: auto;
+        }
+        .look {
+            position: relative;
+            top: 40px;
+            rotate: 25deg;
+            opacity: 0.6;
+            transition: all 1s;
+        }
+        .stairs {
+            position: relative;
+            bottom: 340px;
+            rotate: 25deg;
+            opacity: 0.6;
+            transition: all 1s;
+        }
+        .selfie {
+            position: relative;
+            bottom: 715px;
+            rotate: 25deg;
+            opacity: 0.6;
+            transition: all 1s;
+        }
+        #whole .group:hover .look {
+            opacity: 1;
+            transition: all 1s;
+			transform: rotate(-25deg) translate(400px, 30px);
+            box-shadow: 5px 5px 10px orange;
+        }
+        #whole .group:hover .stairs {
+            opacity: 1;
+            transition: all 1s;
+			transform: rotate(-25deg) translate(-400px, 10px);
+            box-shadow: 5px 5px 10px orange;
+        }
+        #whole .group:hover .selfie {
+            opacity: 1;
+            transition: all 1s;
+			transform: rotate(-25deg) translate(0px, 40px);
+            box-shadow: 5px 5px 10px orange;
+        }
+
+	</style>
+</head>
+<body>
+    <h1>With Friends</h1>
+    
+    <div id="whole">
+    <h3><em>Hover to see the hidden photos.</em></h3>
+
+    <div class="group">
+        <img class="look" src="img/pic1.jpg" alt="USC Village">
+        <img class="stairs" src="img/pic2.jpg" alt="USC Village">
+        <img class="selfie" src="img/pic3.JPG" alt="USC Village">
+
+    </div><!--#group-->
+    </div><!--#whole-->  
+</body>
+</html>

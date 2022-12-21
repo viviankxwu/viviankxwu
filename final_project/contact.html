@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Vivian Wu, digital marketing, social media, consulting, digital marketing, social media consulting, storytelling, USC">
+
+	<meta name="description" content="I'd love to get in touch. Please contact me if you're interested in working together to foster honest, compassionate storytelling. I look forward to seeing how our paths may cross.">
+
+    <title>Get in Touch | Vivian</title>
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        #contactwrap {
+            width: 1090px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:rgb(42, 110, 165);
+            color: black;
+            text-align: center;
+        }
+        #homecontact {
+            padding: 35px;
+            color: white;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.2em;
+        }
+        #contactwrap a {
+            color: white;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #header {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1090px;
+        }
+        #header p {
+            text-align: left;
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.2em;
+        }
+        .mainline {
+            font-size: 4em;
+            background-color: lightsteelblue;
+            color: white;
+        }
+        #header .name {
+            font-size: 1.5em;
+            text-align: center;
+        }
+        #main {
+            text-align: left;
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.2em;
+        }
+        #services {
+            display:grid;
+        }
+        .form-col {
+            /* line-height: 2em; */
+            padding-top: 25px;
+        }
+        .resizedtextbox {
+            width: 300px;
+            height: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9em;
+            background-color: lightsteelblue;
+        }
+        .resizedbigtextbox {
+            width: 495px;
+            height: 120px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9em;
+            background-color: lightsteelblue;
+        }
+        .form-row #submit {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 5px;
+            font-size: .9em;
+            width: 200px;
+            background-color: black;
+            color: white;
+        }
+        #navbar a:hover, #navbar #contact-nav{
+        color: rgb(42, 110, 165);
+        border-bottom: 2px solid rgb(42, 110, 165);	
+	    }
+        #contactcover-video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        }
+        .name, .form-col, #services {
+            color: white;
+        }
+        
+    </style>
+
+
+</head>
+<body>
+    <video id="contactcover-video" autoplay loop muted poster="media/voguevid.mov">
+        <source src="media/voguevid.mov" type="video/mp4">
+        </video>
+
+    <div id="navbar">
+        <ul>
+            <li><a href="final_project.html"><strong>HOME</strong></a></li>
+            <li><a href="about.html"><strong>ABOUT</strong></a></li>
+            <li><a href="works.html"><strong>WORKS</strong></a>
+                <ul>
+                    <li><a href="works.html#dt"><em><strong>DAILY TROJAN</strong></em></a></li>
+                    <li><a href="works.html#21cb"><em><strong>TWENTYFIRSTCENTURYBRAND</strong></em></a></li>
+                    <li><a href="works.html#chime"><em><strong>CHIME</strong></em></a></li>
+                    <li><a href="works.html#ownit"><em><strong>USC OWN IT</strong></em></a></li>
+                    <li><a href="works.html#elp"><em><strong>EAT. LEARN. PLAY.</strong></em></a></li>
+                    <li><a href="works.html#f5"><em><strong>F5</strong></em></a></li>
+                    <li><a href="works.html#swim"><em><strong>SWIMPACT</strong></em></a></li>
+                </ul>
+            </li>
+            <li><a id="contact-nav" href="contact.html"><strong>CONTACT</strong></a></li>
+        </ul>
+        
+    </div><!--#navbar--> 
+
+    <div id="header">
+        <div class="mainline">
+        <h1><em>Get in touch</em></h1>
+        </div> <!--.mainline-->
+        <p class="name"><em><strong>Reach out to me through this contact form.</strong></em></p> 
+    </div> <!--#header-->
+
+    <div id="main">
+        <form action="contact_confirmation.html">
+            <div class="form-row">
+                
+                <div class="form-col">
+                <label for="firstname-id"><strong>Name:</strong></label> 
+                </div> <!--.form-col-->
+    
+                <input id="firstname-id" type="text" class="resizedtextbox" placeholder="Vivian Wu">
+            </div> <!--.form-row-->
+           
+    
+            <div class="form-row">
+                <div class="form-col">
+                <label for="email"><strong>Email:</strong></label>
+                </div> <!--.form-col-->
+                <input id="email" type="email" class="resizedtextbox" placeholder="abc@email.com">
+            </div> <!--.form-row-->
+    
+            <div class="form-row">
+                <div class="form-col">
+                <label for="phone"><strong>Phone:</strong></label>
+                </div> <!--.form-col-->
+                <input id="phone" type="text" class="resizedtextbox" placeholder="000-000-0000">
+            </div> <!--.form-row-->
+    
+    
+            <div class="form-row">
+                <div class="form-col"><strong>Which service(s) are you interested in?</strong>
+                </div> <!--.form-col-->
+                
+                <div id="services">
+                <label>
+                <input type="checkbox">
+                Community Management
+                </label>
+    
+                <label>
+                <input type="checkbox">
+                Social Media Strategy
+                </label>
+    
+                <label>
+                <input type="checkbox">
+                Platform Management 
+                </label>
+    
+                <label>
+                <input type="checkbox">
+                Content Production 
+                </label>
+
+                <label>
+                <input type="checkbox">
+                Reporting & Analysis 
+                </label>
+
+                <label>
+                <input type="checkbox">
+                Influencer Campaigns  
+                </label>
+                </div><!--#services-->
+            </div> <!--.form-row-->
+    
+    
+            <div class="form-row">
+                <div class="form-col">
+                <label for="hear"><strong>How did you hear about Vivian's consulting?</strong></label>
+                </div> <!--.form-col-->
+                <select id="hear" class="resizedtextbox">
+                    <option>Referral</option>
+                    <option>LinkedIn</option> 
+                    <option>Instagram</option> 
+                    <option>Internet Search</option> 
+                    <option>Other</option> 
+                </select>
+            </div> <!--.form-row-->
+    
+    
+            <div class="form-row">
+                <div class="form-col">
+                    <label for="msg"><strong>Tell me about your project. How can I help?</strong></label>
+                </div> <!--.form-col-->
+                <textarea id="msg" class="resizedbigtextbox" placeholder="Hello..."></textarea>
+            </div> <!--.form-row-->
+
+    
+            <div id="last"> 
+            <div class="form-row">
+                <button type="submit" id="submit"><strong>SUBMIT</strong></button>
+                </div> <!--.form-row-->
+            </div><!--#last-->
+        </div> <!--#main-->
+
+
+
+
+    <div id="contactwrap">
+        <div id="homecontact">
+        <h3>Let's connect!</h3>
+        <p><a href = "mailto: vwu83146@usc.edu"><em>Email</em></a></p>
+        <p><a href="https://www.linkedin.com/in/viviankxwu/"target ="_blank"><em>LinkedIn</em></a></p>
+        <p><a href="https://www.instagram.com/viviankxwu/?hl=en"target ="_blank"><em>Instagram</em></a>
+
+        </div><!--#homecontact-->
+    </div><!--#contactwrap-->
+    </div><!--#bigwrap-->
+          
+
+
+
+
+    <div id="footer">
+	    <p><strong>VIVIAN WU &copy; 2022</strong></p>
+	</div> <!--#footer-->
+
+
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    
+
+
+</body>
+</html>

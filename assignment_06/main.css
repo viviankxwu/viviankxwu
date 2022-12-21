@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "Cafe Font";
+    src: url("fonts/Give\ It\ Your\ Heart.ttf");
+}
+
+h2 { 
+    color: white;
+    font-family: 'Inter Tight', sans-serif;
+}
+p {
+    color: white;
+    font-family: 'Inter Tight', sans-serif;
+}
+#footer { 
+    background-color: silver;
+    text-align: center;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+}
+/* #navbar > a would also work as another option */
+#navbar a {
+    text-decoration: none;
+    /* background-color: #FC0; */
+    width: 150px;
+    height: 50px;
+    /* width of #main = 600 / 4 tabs = 150 px */
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    color: #777;
+    border-bottom: 2px solid #FFF;
+    /* Add a border that you can't see so it doesn't move down */
+}
+#navbar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#navbar > ul {
+    display: flex;
+    align-items: flex-start;
+}
+#navbar li:hover {
+    background-color: burlywood;
+}
+#navbar > li {
+    display: flex;
+    align-items: flex-start;
+}
+#navbar li{
+    background-color: white;
+    text-align: center;
+    position: relative;
+}
+#navbar li:hover > ul {
+    display: block; 
+}
+#navbar > ul ul {
+    position: absolute;
+    display: none;
+}
+#navbar {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position:relative;
+    z-index: 1;
+}

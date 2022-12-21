@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A Seattle Summer in 0.5 | Vivian Wu</title>
+</head>
+
+<style>
+    /* Image Gallery */
+    h1 {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: 0px 3px 5px lightskyblue;
+    }
+    
+    #main {
+    width: 704px;
+    /* 160px * 4 = 640px 4 images
+    5px padding * 8 = 40px 
+    total width = 640 + 40 = 680px
+    border 3px * 8 = 24px 
+    680px + 24px = 704px
+    */
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: pink; */
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .seattle {
+			width: 160px;
+			height: 210px;
+			margin: 5px;
+			opacity: 0.5; 
+    }
+    .seattle:hover{
+			opacity: 1.0;
+			/* 100% opaque or 0% transparent */
+    }
+    .seattle + p {
+			text-align: center;
+			/* display: none; */
+			/* display none makes it disappear */
+			visibility: hidden;
+		}
+		.seattle:hover + p {
+			/* display: block; */
+			/* display block brings it back */
+            visibility: visible;
+		}
+</style>
+
+<body>
+    <h1><em>A Seattle Summer in 0.5 — Summer 2022</em></h1>
+    
+    <div id="main">
+        <div id="img-link">
+        <img class="seattle" src="img/seattle.5-1.png" alt="Link">
+        <p>Link Rides</p>
+        </div><!--.img-container-->
+
+        <div id="img-meal">
+        <img class="seattle" src="img/seattle.5-2.png" alt="Meal">
+        <p>Meal at the Apartment</p>
+        </div><!--.img-container-->
+
+        <div id="img-rooftop">
+        <img class="seattle" src="img/seattle.5-3.png" alt="Rooftop">
+        <p>Rooftop Hangout</p>
+        </div><!--.img-container-->
+
+        <div id="img-beach">
+        <img class="seattle" src="img/seattle.5-4.png" alt="Beach">
+        <p>Sunset at the Beach</p>
+        </div><!--.img-container-->
+
+        <div id="img-elevator">
+            <img class="seattle" src="img/seattle.5-5.png" alt="Elevator">
+            <p>Bar Elevator</p>
+        </div><!--.img-container-->
+
+        <div id="img-bbq">
+            <img class="seattle" src="img/seattle.5-6.png" alt="BBQ">
+            <p>BBQ at the Apartment</p>
+        </div><!--.img-container-->
+
+        <div id="img-swim">
+            <img class="seattle" src="img/seattle.5-7.png" alt="Swim">
+            <p>Floaties at the Beach</p>
+        </div><!--.img-container-->
+
+        <div id="img-family">
+            <img class="seattle" src="img/seattle.5-8.png" alt="Family">
+            <p>Family Visits</p>
+        </div><!--.img-container-->
+        
+        <div id="img-chinatown">
+            <img class="seattle" src="img/seattle.5-9.png" alt="Chinatown">
+            <p>Family in Chinatown</p>
+        </div><!--.img-container-->
+
+        <div id="img-kayak">
+            <img class="seattle" src="img/seattle.5-10.png" alt="Kayak">
+            <p>Group Kayaking</p>
+        </div><!--.img-container-->
+
+        <div id="img-mafia">
+            <img class="seattle" src="img/seattle.5-11.png" alt="Mafia">
+            <p>Mafia Game</p>
+        </div><!--.img-container-->
+       
+        <div id="img-octo">
+            <img class="seattle" src="img/seattle.5-12.png" alt="OCTO">
+            <p>Dinner with OCTO</p>
+        </div><!--.img-container-->
+
+        <div id="img-dinner">
+            <img class="seattle" src="img/seattle.5-13.png" alt="Dinner">
+            <p>Homemade Dinner</p>
+        </div><!--.img-container-->
+
+        <div id="img-pier">
+            <img class="seattle" src="img/seattle.5-14.png" alt="Pier">
+            <p>Walks Along the Pier</p>
+        </div><!--.img-container-->
+
+        <div id="img-kimbap">
+            <img class="seattle" src="img/seattle.5-15.png" alt="Kimbap">
+            <p>Kimbap Meal</p>
+        </div><!--.img-container-->
+
+        <div id="img-costco">
+            <img class="seattle" src="img/seattle.5-16.png" alt="COSTCO">
+            <p>Trip to Costco</p>
+        </div><!--.img-container-->
+    </div> <!--#main-->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $('#img-link').click(function(){
+            $('div').css('border','none');
+			$('#img-link').css('border','3px solid pink');
+		});
+        $('#img-meal').click(function(){
+            $('div').css('border','none');
+			$('#img-meal').css('border','3px solid pink');
+		});
+        $('#img-rooftop').click(function(){
+            $('div').css('border','none');
+			$('#img-rooftop').css('border','3px solid pink');
+		});
+        $('#img-beach').click(function(){
+            $('div').css('border','none');
+			$('#img-beach').css('border','3px solid pink');
+		});
+        $('#img-elevator').click(function(){
+            $('div').css('border','none');
+			$('#img-elevator').css('border','3px solid pink');
+		});
+        $('#img-bbq').click(function(){
+            $('div').css('border','none');
+			$('#img-bbq').css('border','3px solid pink');
+		});
+        $('#img-swim').click(function(){
+            $('div').css('border','none');
+			$('#img-swim').css('border','3px solid pink');
+		});
+        $('#img-family').click(function(){
+            $('div').css('border','none');
+			$('#img-family').css('border','3px solid pink');
+		});
+        $('#img-chinatown').click(function(){
+            $('div').css('border','none');
+			$('#img-chinatown').css('border','3px solid pink');
+		});
+        $('#img-kayak').click(function(){
+            $('div').css('border','none');
+			$('#img-kayak').css('border','3px solid pink');
+		});
+        $('#img-mafia').click(function(){
+            $('div').css('border','none');
+			$('#img-mafia').css('border','3px solid pink');
+		});
+        $('#img-octo').click(function(){
+            $('div').css('border','none');
+			$('#img-octo').css('border','3px solid pink');
+		});
+        $('#img-dinner').click(function(){
+            $('div').css('border','none');
+			$('#img-dinner').css('border','3px solid pink');
+		});
+        $('#img-pier').click(function(){
+            $('div').css('border','none');
+			$('#img-pier').css('border','3px solid pink');
+		});
+        $('#img-kimbap').click(function(){
+            $('div').css('border','none');
+			$('#img-kimbap').css('border','3px solid pink');
+		});
+        $('#img-costco').click(function(){
+            $('div').css('border','none');
+			$('#img-costco').css('border','3px solid pink');
+		});
+
+    </script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    
+        <meta name="description" content="This is Vivian Wu's ITP 104 main page of content.">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        
+        <title>Vivian Wu | Student Page</title>
+    <style>
+        strong {
+            background-color:purple;
+            color: white;
+        }
+        img {
+            height: 200px;
+            width: auto;
+        }
+        #main {
+            width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+        }
+        #header { 
+            margin-left: auto;
+            margin-right: auto;
+            width: 960px;
+        }
+        #sidebar {
+            width: 450px;
+            background-color: peachpuff;
+            padding: 15px;
+        }
+        #wrapper {
+            background-color: powderblue;
+            display: flex;
+            width: 960px;
+            /* width of main 450px + width of sidebar 450px = 900px */
+            /* 900px + padding left 15px + padding right 15px + padding sidebar left 15px + padding sidebar right 15px = 960px */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #section {
+            width: 450px;
+            padding: 15px;
+        }
+        #sidebar2 {
+            width: 450px;
+            background-color: pink;
+            padding: 15px;
+        }
+        #wrapper2 {
+            background-color: lightgreen;
+            width: 960px;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+		/* small devices (mobile) screen size <= 767px */
+		@media (max-width: 767px) {
+			body {
+				padding-top: 0px;
+		    }
+		
+            #wrapper, #wrapper2 {
+                flex-direction: column;
+            }
+
+            #header, #wrapper, #main, #sidebar, #wrapper2, #section, #sidebar2 {  
+                flex-direction: column;
+                width: 100%; 
+				height: auto;
+				margin-left: auto;
+				margin-right: auto;
+                padding: 0px;
+			}
+
+			#main img {
+				width: 100%; 
+				height: auto;
+			}
+		}
+
+    </style>
+    </head>
+   
+    <body>
+        <div id="header">
+        <h1>Vivian Wu</h1>
+        <p><a href="mailto:vwu83146@usc.edu">vwu83146@usc.edu</a></p>
+        </div> <!--#header-->
+
+<div id="wrapper">
+    <div id="main">
+        <p>Favorite color: <strong>Purple</strong></p>
+        <p>Favorite website: <a href=https://youtube.com/>YouTube.com</a></p>
+        <p>Favorite activity: Listening to Music</p>
+        <img src="https://ggie.berkeley.edu/wp-content/uploads/2019/09/Listening_to_Music_Mindfully_1200x630.jpg" alt="Listening to Music">
+   
+    </div> <!--#main-->
+     <div id="sidebar">
+        <h3>Fall 2022 Classes:</h3>
+        <ul>
+            <li>CMGT 540: Uses of Communication Research</li>
+            <li>ITP 140: Introduction to Web Development</li>
+            <li>LAW 210: Fundamentals of the U.S. Legal System</li>
+            <li>PR 454: Sports Public Relations</li>
+            <li>CMGT 588: Global Storytelling: The Power of Narrative</li>
+        </ul>
+    </div> <!--#sidebar-->
+</div> <!--#wrapper--> 
+
+<div id="wrapper2">  
+<div id="section">
+        <h3>Completed Assignments:</h3>
+        <ul> 
+            <li><a href="assignment_01/assignment_01.html">Assignment 1</a></li>
+            <li><a href="assignment_02/assignment_02.html">Assignment 2</a></li>
+            <li><a href="assignment_03/assignment_03.html">Assignment 3</a></li>
+            <li><a href="assignment_04/assignment_04.html">Assignment 4</a></li>
+            <li><a href="assignment_05/assignment_05.html">Assignment 5</a></li>
+            <li><a href="assignment_06/assignment_06.html">Assignment 6</a></li>
+            <li><a href="assignment_07/assignment_07.html">Assignment 7</a></li>
+            <li><a href="assignment_08/assignment_08.html">Assignment 8</a></li>
+            <li><a href="assignment_09/about.html">Assignment 9</a></li>
+            <li><a href="final_project/final_project.html">Final Project</a></li>
+            <li><a href="final_project/media/ITP104 Final Project Summary.pdf">Final Project Summary PDF</a></li>
+
+        </ul>
+    </div> <!--#section--> 
+
+        <div id="sidebar2">
+        <h3>Completed Labs:</h3>
+        <ul>
+            <li><a href="old_index.html">Lab 2</a></li>
+            <li><a href="lab_03/assignment_01.html">Lab 3</a></li>
+            <li><a href="index.html">Lab 4</a></li>
+            <li><a href="lab_05/lab_05.html">Lab 5</a></li>
+            <li><a href="lab_06/lab_06.html">Lab 6</a></li>
+            <li><a href="lab_07/lab_07.html">Lab 7</a></li>
+            <li><a href="lab_09/lab_09.html">Lab 9</a></li>
+            <li><a href="lab_10/lab_10.html">Lab 10</a></li>
+            <li><a href="lab_11/lab_11.html">Lab 11</a></li>
+            <li><a href="lab_12/lab_12.html">Lab 12</a></li>
+        </ul>
+
+</body>
+    </div><!--#sidebar2-->
+    </div> <!--#wrapper2-->
+
+</html>

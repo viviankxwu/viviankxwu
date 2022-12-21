@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>April 2022 Calendar</title>
+        <style>
+            #header {
+                background-image: url("img/flowers_cover.jpg");
+                height: 300px;
+                color: white;
+                background-size: cover;
+                background-position: center;
+			    font-size: 2em;
+			    font-family: Arial, Helvetica, sans-serif;
+			    text-align: center;
+			    line-height: 300px;
+			    text-shadow: 0px 0px 10px #000;
+                width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            th{
+			border: 1px solid purple;
+			border-bottom: 3px solid purple;
+			padding: 10px 0px;
+			width: 141.7px;
+            height: 30px;
+            text-align: center;
+		}
+		/* width of #main = 1000px
+		# of borders = 8
+		width of each border = 1px x 8 = 8px
+		1000px - 8px = 992 px left for the width of cells 
+		992px / 7 = 141.7px per cell
+		
+		Note: browsers will round px fractions*/
+
+		    td {
+			border: 1px solid purple;
+			padding: 10px 0px;
+			width: 141.7px;
+            height: 100px;
+            vertical-align: text-top;
+            }
+
+		    table {
+			border-collapse: collapse;
+            text-align: right;
+            margin-left: auto;
+            margin-right: auto;
+            }       
+
+            .march {
+                color: lightgray;
+            }
+
+            #abirthday {
+                background-image: url("img/abirthdaycelebration.jpeg");
+                background-size: cover;
+            }
+
+            #birthday{
+                background-image: url("img/mycake.jpeg");
+                background-size: cover;
+            }
+
+            #easter {
+                background-image: url("img/easter.jpeg");
+                background-size: cover;
+            }
+
+            #earthday {
+                background-image: url("img/earthday.jpeg");
+                background-size: cover;
+            }
+
+            .dayname {
+                color: white;
+                text-shadow: 0px 0px 5px #000;
+                text-align: center;
+            }
+
+
+        </style>    
+    </head>
+
+    <body>
+        <div id="header">
+        <h1><strong>April 2022</strong></h1>
+        </div> <!--#header-->
+
+        <table>
+            <tr>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+
+            <tr>
+                <td class="march">27</td>
+                <td class="march">28</th>
+                <td class="march">29</td>
+                <td class="march">30</td>
+                <td class="march">31</td>
+                <td id="fools"><strong>1</strong></td>
+                <td>2</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td id="abirthday"><strong>4</strong>
+                    <p class="dayname"><strong>Ayden's Birthday</strong></p>
+                </td>
+                <td id="birthday"><strong>5</strong>
+                    <p class="dayname"><strong>Vivian's Birthday</strong></p>
+                </td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            
+            <tr>
+                <td id="easter"><strong>17</strong>
+                    <p class="dayname"><strong>Easter</strong></p>
+                </td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td id="earthday"><strong>22</strong>
+                    <p class="dayname"><strong>Earth Day</strong></p>
+                </td>
+                <td>23</td>
+            </tr>
+
+            <tr>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+            </tr>
+
+        </table>
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+</html>
